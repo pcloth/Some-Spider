@@ -50,11 +50,12 @@ def get_this_page(page_urls):
             photographer=photographer[photographer.find('blank')+7:photographer.find('</a>')]
 
             album.append(this_pic_url)
-            page_id+=1
+            
             if htxt.find('isLastPage = true')>0:
                 print('%d : (%s)相册共计%d张图片,正在下载...'%(album_id,title,page_id))
                 get_images(photographer,title,album,page_id)
                 break
+            page_id+=1
                 
 # 开始下载图片
 def get_images(photographer,title,album,pic_count):
