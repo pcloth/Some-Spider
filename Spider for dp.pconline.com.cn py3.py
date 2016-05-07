@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 '''
-获取太平洋摄影部落人像图片。
-py3.5
+获取太平洋摄影部落人像图片 for py3.5
 
 '''
 import requests,os
